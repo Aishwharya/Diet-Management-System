@@ -1,0 +1,99 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Details </title>  
+<style>   
+body {  
+  font-family: Calibri, Helvetica, sans-serif; 
+  background-image :  url("detailsimg.jfif");
+background-repeat: no-repeat;
+background-position: center;
+   background-size: cover;
+} 
+h1{
+margin-top: 50px;
+font-family: Garamond;
+text-align: center;
+margin-left:30px;
+font-weight:bold;
+} 
+h2{
+ font-family: Arial, Helvetica, sans-serif;
+text-align: center;
+margin-top: 50px;
+margin-bottom: 50px;
+} 
+ #age{
+margin-left: 70px;
+}
+ #name{
+margin-left: 60px;
+}
+.submitclass {   
+	  background-color: black;   
+        color: orange;   
+        padding: 15px; 
+	margin-left:300px;  
+        border: none;   
+        cursor: pointer;  
+	display:inline; 
+         }  
+.resetclass{
+
+ background-color: black;   
+        color: orange;   
+        padding: 15px;   
+        border: none;   
+        cursor: pointer;
+	margin:0 auto;
+	display:inline;    
+}  
+    
+input[type=text] , input[type=number]{   
+        width: 50%;   
+        margin-left: 20px;
+        padding: 12px 20px;     
+        border: 2px solid green;   
+        box-sizing: border-box;   
+    } 
+   
+     
+.container {   
+        padding: 25px;   
+        background-color: lightblue;  
+	margin-right: 450px;
+	margin-left: 500px;
+	border: none;
+	text-align: center;
+	padding-left: 10px;
+    }     
+</style>   
+</head>    
+<body>    
+    <center> <h1>DIET MANAGEMENT SYSTEM</h1>
+              <h2>DETAILS</h2> </center>   
+    <form method="POST" action="database.php">  
+        <div class="container" >  
+	    <label>Name :        </label>   
+            <input type="text" placeholder="Enter Name" name="name" id="name" required> 
+		<br><br><br>
+            <label>Age :        </label>   
+            <input type="number" placeholder="Enter age" id="age" name="age" required>  
+            <br><br><br>
+            <label>Height(Cms) : </label>   
+            <input type="number" placeholder="Enter height" name="height" required> 
+            <br><br><br>
+            <label>Weight(Kg) : </label>   
+            <input type="number" placeholder="Enter weight" name="weight" required>  
+            <br><br>
+<button type="reset" class="resetclass"> Reset</button>  
+           <button class="submitclass" name="detailssubmit">Submit</button>
+      
+               
+             
+              
+        </div>   
+    </form>     
+</body>     
+</html>  
